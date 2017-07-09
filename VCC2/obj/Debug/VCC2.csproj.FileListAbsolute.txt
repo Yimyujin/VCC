@@ -1,0 +1,92 @@
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\VCC2.exe.config
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\grpc_csharp_ext.x86.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\grpc_csharp_ext.x64.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\libgrpc_csharp_ext.x86.so
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\libgrpc_csharp_ext.x64.so
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\libgrpc_csharp_ext.x86.dylib
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\libgrpc_csharp_ext.x64.dylib
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\VCC2.exe
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\VCC2.pdb
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\CommandLine.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.CommonProtos.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.Gax.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.Gax.Grpc.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Auth.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Core.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.PlatformServices.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Speech.v1.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Cloud.Speech.V1.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.LongRunning.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Protobuf.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Grpc.Auth.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Grpc.Core.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\NAudio.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Newtonsoft.Json.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\System.Interactive.Async.dll
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\CommandLine.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.CommonProtos.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.Gax.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Api.Gax.Grpc.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Auth.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Core.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Apis.Speech.v1.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Cloud.Speech.V1.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.LongRunning.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Google.Protobuf.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Grpc.Auth.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Grpc.Core.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\NAudio.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\Newtonsoft.Json.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\bin\Debug\System.Interactive.Async.xml
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\obj\Debug\VCC2.csprojResolveAssemblyReference.cache
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\obj\Debug\VCC2.exe
+c:\users\yim\documents\visual studio 2015\Projects\VCC2\VCC2\obj\Debug\VCC2.pdb
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\libgrpc_csharp_ext.x86.so
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\libgrpc_csharp_ext.x86.dylib
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\VCC2.exe.config
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\VCC2.exe
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\VCC2.pdb
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\CommandLine.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.CommonProtos.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.Gax.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.Gax.Grpc.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Auth.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Auth.PlatformServices.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Core.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.PlatformServices.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Speech.v1.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Cloud.Speech.V1.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.LongRunning.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Protobuf.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Grpc.Auth.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Grpc.Core.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\NAudio.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\System.Interactive.Async.dll
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\CommandLine.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.CommonProtos.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.Gax.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Api.Gax.Grpc.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Auth.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Core.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Apis.Speech.v1.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Cloud.Speech.V1.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.LongRunning.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Google.Protobuf.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Grpc.Auth.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Grpc.Core.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\NAudio.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\bin\Debug\System.Interactive.Async.xml
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\obj\Debug\VCC2.csprojResolveAssemblyReference.cache
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\obj\Debug\VCC2.exe
+C:\Users\Bae hyunsu\Desktop\졸업작품\VCC2\obj\Debug\VCC2.pdb
