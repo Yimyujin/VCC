@@ -19,47 +19,58 @@ namespace VCC2
         //name 프로세스 종료
         static void Close_process(string name)
         {
-            //테스트를 위한 코드 : "아"라고 말하면 notePad(메모장)으로 인식하여 실행됨
-            if (name == "아")
-                name = "notePad";
-            //====
+            try
+            {
+                string now = "VCC2 - Microsoft Visual Studio"; //꺼지면 안되는 프로그램
+                //테스트를 위한 코드 : "아"라고 말하면 notePad(메모장)으로 인식하여 실행됨
+                //if (name == "아")
+                    name = "notePad";
+                //====
 
- 
-            /*
-            //특정 name 프로세스 종료
-            Process[] processList = Process.GetProcessesByName(name);
-            if(processList.Length>0)
-            {
-                processList[0].Kill();
-                Console.WriteLine("%s를 종료하였습니다.", name);
-            }
-            else
-            {
-                Console.WriteLine("%s가 실행되어있지 않습니다.", name);
-            }
-            //======================
-            */
-            ///*
-            /////현재 비주얼 스튜디오 제외 모든 프로세스 꺼보기
-            if (name == "notePad")
-            {
-                Process[] processList = Process.GetProcesses();//시스템의 모든 프로세스 정보 
-                Process rocessCurrent = Process.GetCurrentProcess();
-                foreach (Process p in processList)
+
+                /*
+                //특정 name 프로세스 종료
+                Process[] processList = Process.GetProcessesByName(name);
+                if(processList.Length>0)
                 {
-                    if (p.Id != rocessCurrent.Id)
-                    {
-                        p.Kill();
-                        Console.WriteLine("%s를 종료하였습니다.\n", p.ProcessName);
-                    }
+                    processList[0].CloseMainWindow();
+                    Console.WriteLine("%s를 종료하였습니다.", name);
                 }
-                Console.WriteLine("프로세스를 종료 끝");
+                else
+                {
+                    Console.WriteLine("%s가 실행되어있지 않습니다.", name);
+                }
+                //======================
+                */
+                ///*
+                /////현재 비주얼 스튜디오 제외 모든 프로세스 꺼보기
+                if (name == "notePad")
+                {
+                    Process[] processList = Process.GetProcesses();//시스템의 모든 프로세스 정보 
+                    Process rocessCurrent = Process.GetCurrentProcess();
+                    foreach (Process p in processList)
+                    {
+                        Console.WriteLine("{0}를 종료하였습니다.\n", p.ProcessName);
+
+                        if (p.ProcessName == now || p.ProcessName == "VCC2")
+                             continue;
+                       
+                        p.CloseMainWindow();
+                        
+                    }
+                    Console.WriteLine("프로세스를 종료 끝");
+                }
+                else
+                {
+                    Console.WriteLine("인식할 수 없는 명령어입니다.");
+                }
+                //*/
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine("인식할 수 없는 명령어입니다.");
+                Console.WriteLine("The process failed: {0}", e.ToString());
             }
-            //*/
+            finally { }
         }
 
         //컴퓨터 종료
@@ -76,8 +87,64 @@ namespace VCC2
                 Process.Start("shutdown.exe", "-r -t 10");//10초 후 컴퓨터 재시작
         }
 
-        // [START speech_streaming_mic_recognize]
-        static async Task<object> StreamingMicRecognizeAsync(int seconds)
+        //지정 경로(folder)에서 name 파일 찾기
+        static void find(string name, string folder)//name="data"
+        {
+            try
+            {
+                string file = "*" + name + "*";//Notepad data.txt
+                string dir = folder; //디렉토리
+                //@"C:\Users\Bae hyunsu\Desktop" - 바탕화면
+
+                DirectoryInfo Di = new DirectoryInfo(dir);
+                FileInfo[] files = Di.GetFiles(file, SearchOption.AllDirectories);
+                FileInfo correct = null;
+
+                Console.WriteLine("현재 탐색 폴더 : {0}", folder);
+                foreach (FileInfo s in files)
+                {
+                    if (Path.GetFileNameWithoutExtension(s.Name) == name)
+                    {
+                        correct = s;
+                    }
+
+                    //파일이름, 확장자, 풀 경로 출력
+                    //Console.WriteLine("{0} , {1} , {2} ", Path.GetFileNameWithoutExtension(s.Name), Path.GetExtension(s.Name), Path.GetFullPath(s.Name));
+                    Console.WriteLine("{0}", Path.GetFileName(s.Name));
+                    //open_file(s.DirectoryName, s.Name); //해당 파일 열기
+                }
+                /*
+                if (correct!=null)//정확한 파일명이 있으면 가장 나중에 출력
+                    Console.WriteLine("정확 : {0}", Path.GetFullPath(correct.Name));
+                */
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The process failed: {0}", e.ToString());
+            }
+            finally { }
+        }
+
+        //dir 폴더에 있는 file 열기
+        static void open_file(string dir, string file)
+        {
+            try
+            {
+                System.Diagnostics.Process ps = new System.Diagnostics.Process();
+                ps.StartInfo.FileName = file;
+                ps.StartInfo.WorkingDirectory = dir;
+                ps.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+                ps.Start();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("The process failed: {0}", e.ToString());
+            }
+            finally{ }
+        }
+
+    // [START speech_streaming_mic_recognize]
+    static async Task<object> StreamingMicRecognizeAsync(int seconds)
         {
 
             string st = "";
@@ -171,6 +238,8 @@ namespace VCC2
             //Computer_shutdown(st);//5번 기능
             //Computer_restart(st);//6번 기능
 
+            //find("data", @"C:\Users\Bae hyunsu\Desktop\졸업작품\default");//find(st);//2번 기능
+            //open_file(@"C:\Users\Bae hyunsu\Desktop\졸업작품", "data.txt");//3번 기능
             /*
             if (st.Contains("구글 켜 줘"))
                 target = open_google;
