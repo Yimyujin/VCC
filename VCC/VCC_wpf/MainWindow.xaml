@@ -1,0 +1,17 @@
+﻿<Window x:Class="VCC_wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VCC_wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="456.411" Width="732.742">
+    <Grid Height="428" VerticalAlignment="Top" Margin="0,0,0,-3"  >
+        <TextBox x:Name="textBox_filePath" HorizontalAlignment="Left" Height="65" Margin="50,24,0,0" TextWrapping="Wrap" Text="Drag and Drop" VerticalAlignment="Top" Width="600" AllowDrop="True" Drop="textBox_Drop" DragEnter="textBox_DragEnter" PreviewDragOver="textBox_PreviewDragOver"/>
+        <Button x:Name="button_register" Content="Register" HorizontalAlignment="Left" Height="30" Margin="50,176,0,0" VerticalAlignment="Top" Width="172" Click="button_register_Click"/>
+        <Button x:Name="button_voice" Content="Voice" HorizontalAlignment="Left" Height="30" Margin="478,176,0,0" VerticalAlignment="Top" Width="172" Click="button_voice_Click"/>
+        <TextBox x:Name="textBox_registerName" HorizontalAlignment="Left" Height="28" Margin="50,124,0,0" TextWrapping="Wrap" Text="등록할 명령어" VerticalAlignment="Top" Width="600" AllowDrop="True" Drop="textBox_Drop" DragEnter="textBox_DragEnter" PreviewDragOver="textBox_PreviewDragOver"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="50,94,0,0" TextWrapping="Wrap" Text="※등록한 위 프로그램의 경로가 더 이상 존재하지 않을 시 명령어는 유효하지 않습니다." VerticalAlignment="Top" Width="600"/>
+    </Grid>
+
+</Window>
