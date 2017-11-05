@@ -38,12 +38,12 @@ namespace VCC_wpf
         {
             InitializeComponent();
         }
+
         static string program = "";
         static string command = "";
         static string voice = "";
         static SortedList<string, string> userCommand = new SortedList<string, string>();
         static List<string> listOfuserCommand = new List<string>();
-        int sizeOfuserCommand = 0;
         [DllImport("user32.dll")]
         public static extern void keybd_event(uint vk, uint scan, uint flags, uint extraInfo);
 
@@ -394,6 +394,7 @@ namespace VCC_wpf
             if (voice.Contains("실행") || voice.Contains("켜"))
                 command = "open";
         }
+        
         // [START speech_streaming_mic_recognize]
         static async Task<int> StreamingMicRecognizeAsync(int seconds)
         {
@@ -438,9 +439,12 @@ namespace VCC_wpf
                     }
                 }
             });
+
+
             // Read from the microphone and stream to API.
             object writeLock = new object();
             bool writeMore = true;
+
             var waveIn = new NAudio.Wave.WaveInEvent();
             waveIn.DeviceNumber = 0;
             waveIn.WaveFormat = new NAudio.Wave.WaveFormat(16000, 1);
@@ -460,7 +464,7 @@ namespace VCC_wpf
                 };
             waveIn.StartRecording();
             //Console.WriteLine("Speak now.");
-            MessageBox.Show("Speak now");
+            //MessageBox.Show("Speak now");
             await Task.Delay(TimeSpan.FromSeconds(seconds));
             // Stop recording and shut down.
             waveIn.StopRecording();
@@ -468,7 +472,7 @@ namespace VCC_wpf
             await streamingCall.WriteCompleteAsync();
             await printResponses;
             /* 명령어 체크 후 실행 */
-            MessageBox.Show(voice);
+            //MessageBox.Show(voice);
             CheckCommand(voice);
             ExecCommand();
             return 0;
@@ -534,11 +538,98 @@ namespace VCC_wpf
 
         private async void button_voice_Click(object sender, RoutedEventArgs e)
         {
-            int getResult = await StreamingMicRecognizeAsync(5);
+            int getResult = await StreamingMicRecognizeAsync(5);//5초동안
+
             //int resultOfMicRecognize = await getResult;
             if (getResult == -1)
                 MessageBox.Show("연결된 마이크 기기가 없습니다.");
             return;
         }
+
+
+        /* ========= 17.07.24 ============
+         * ===== 작성자 : 배현수 =========
+         *
+         */
+
+        int Num_word = 6;//비교하는 단어 수
+        int MAXpage = 38;//전체 page 수
+        //string CheckString = "";//현재 페이지를 넘기는 문장(sizeQueue 음절 수)
+        //string ScriptFile = "script.txt";
+
+        bool Operate = false;//작동 중
+        Announcment ann;
+        //q = new Queue<string>();
+
+        //발표모드 버튼 클릭
+        private async void button_Announcment_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ann = new Announcment(Num_word, MAXpage);
+                ann.Sentense_Analysis();//Script 분석
+
+                //Script 있다면
+                string[][] script = null;
+                if (ann.hasScript())
+                {
+                    script = ann.getScript();
+                    /* test
+                    for (int i=0;i<ann.getScript_ind();i++)
+                    {
+                        string sum = "";
+                        string[] values = script[i];
+                        foreach (string tmp in values)
+                        {
+                            sum += tmp;
+                            sum += " / ";
+                        }
+                        MessageBox.Show(sum);
+                    }
+                    */
+                }
+                else
+                {
+                    MessageBox.Show("dont' have ScriptFile");
+                    return;
+                }
+                Operate = true;
+                await make_QueueAsync();
+            }
+            catch(Exception ee)
+            {
+                MessageBox.Show(ee.ToString());
+            }
+        }
+
+        //int ddd = 1;
+        private async Task make_QueueAsync()
+        {
+            if (!Operate)
+                return;
+
+            int getResult = await StreamingMicRecognizeAsync(8);//8초동안
+            if (getResult == -1)
+            {
+                MessageBox.Show("연결된 마이크 기기가 없습니다.");
+                return;
+            }
+            
+            //ann.go_Next(ddd++);
+            //다음장으로 넘겼다면
+            if (ann.NextPage(voice))
+                if (ann.IsLastpage())//마지막 페이지라면
+                    Operate = false;//작동 종료
+
+            if (Operate)
+                await make_QueueAsync();
+        }
+
+        private void button_Stop_Click(object sender, RoutedEventArgs e)
+        {
+            Operate = false;
+        }
+
+        // ==================================
     }
 }

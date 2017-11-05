@@ -12,6 +12,8 @@
         <Button x:Name="button_voice" Content="Voice" HorizontalAlignment="Left" Height="30" Margin="478,176,0,0" VerticalAlignment="Top" Width="172" Click="button_voice_Click"/>
         <TextBox x:Name="textBox_registerName" HorizontalAlignment="Left" Height="28" Margin="50,124,0,0" TextWrapping="Wrap" Text="등록할 명령어" VerticalAlignment="Top" Width="600" AllowDrop="True" Drop="textBox_Drop" DragEnter="textBox_DragEnter" PreviewDragOver="textBox_PreviewDragOver"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="50,94,0,0" TextWrapping="Wrap" Text="※등록한 위 프로그램의 경로가 더 이상 존재하지 않을 시 명령어는 유효하지 않습니다." VerticalAlignment="Top" Width="600"/>
+        <Button Content="Announcement" HorizontalAlignment="Left" Margin="274,176,0,0" VerticalAlignment="Top" Width="162" RenderTransformOrigin="0.152,-0.375" Height="30" Click="button_Announcment_Click"/>
+        <Button Content="Stop" HorizontalAlignment="Left" Margin="274,235,0,0" VerticalAlignment="Top" Width="162" Height="27" Click="button_Stop_Click"/>
     </Grid>
 
 </Window>
